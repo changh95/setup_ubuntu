@@ -7,7 +7,7 @@ sudo apt-get -y upgrade
 # Install programs
 sudo apt-get -y install ubuntu-unity-desktop # Ubuntu renderer
 sudo snap install clion --classic # CLion IDE
-sudo snap install [pycharm-professional|pycharm-community] --classic # Pycharm Community IDE
+sudo snap install pycharm-community --classic # Pycharm Community IDE
 sudo snap install --classic code # Visual studio code
 sudo snap install ao # Microsoft Todo
 sudo snap install slack --classic # Slack
