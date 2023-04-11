@@ -42,10 +42,7 @@ sudo rm -rf ${ZDOTDIR:-$HOME}/.zprezto
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto" # prezto
 echo "" >> ~/.zshrc
 echo "# prezto\n" >> ~/.zshrc
-echo "setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done" >> ~/.zshrc
+echo "source \"${ZDOTDIR:-$HOME}/.zprezto/init.zsh\"" >> ~/.zshrc
 chsh -s /bin/zsh
 
 sudo apt-get -y install tmux # tmux
